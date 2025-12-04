@@ -1,0 +1,21 @@
+table.draft{
+    border:2px solid #ccc !important;
+    thead{       
+        tr{
+            th{
+        background-color: #f3f3f3 !important; 
+        font-size:14px !important;
+        font-weight: 500 !important;        
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+            color:#999 !important;
+        font-size:13px !important;
+        font-weight: 400 !important;  
+            }
+        }
+    }
+}

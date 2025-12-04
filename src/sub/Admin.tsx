@@ -9,15 +9,19 @@ const Admin= () => {
 
     return(
         <>
-<Container>
+<Container fluid>
     <Row>
         <Col md={6}>
+        <div className="">
             <Callendar/>
+        </div>
         </Col>
         
         <Col md={6}>
+        <div className="">
             <Pay/>
             <Notice/>
+        </div>
         </Col>
     </Row>
 </Container>

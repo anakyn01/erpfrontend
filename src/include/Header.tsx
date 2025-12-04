@@ -39,6 +39,7 @@ expand={expand} : 각 반복에 맞는 반응형 설정
         <Nav className='justify-content-end flex-grow-1 pe-3'>
           {/*링크들을 오른쪽 끝으로 정렬 오른쪽 패딩에 공백 */}
               <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/admin">admin</Nav.Link>
               <Nav.Link as={Link} to="/member">회원가입</Nav.Link>
               <Nav.Link as={Link} to="/about">about</Nav.Link>
               <Nav.Link as={Link} to="/contact">contact</Nav.Link>

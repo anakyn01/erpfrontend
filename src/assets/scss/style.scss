@@ -2,6 +2,13 @@
 @use"./bg" as bg;
 @use "./margin" as mg;
 @use "./btn";
+@use "./admin";
+@use "./font";
+@use "./table";
+
+html, html * {
+    font-family: 'Pretendard';
+}
 
 html{
     body{

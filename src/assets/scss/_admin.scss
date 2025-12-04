@@ -1,20 +1,26 @@
 .schedule-container {
-  padding-top: 20px;
+  background-color: white ;
+  padding:30px 40px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 300px #000;
+  /* 상단 제목 영역 */
+  .schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+      .schedule-title-left {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      }
+  }
 }
 
-/* 상단 제목 영역 */
-.schedule-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
 
-.schedule-title-left {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
+
+
+
 
 .schedule-arrow {
   font-size: 18px;
@@ -104,4 +110,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.pay{
+  background-color: white; 
+  padding:30px 40px; 
+  border-radius: 30px;
 }

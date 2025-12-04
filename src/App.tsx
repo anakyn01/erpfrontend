@@ -27,7 +27,7 @@ import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 //부트스트랩 cdn
 import 'bootstrap/dist/css/bootstrap.min.css';
 //sass  연결
-import './scss/style.scss';//리액트 에서는 sass컴파일 없이 사용
+import './assets/scss/style.scss';//리액트 에서는 sass컴파일 없이 사용
 
 
 //백앤드에서 받아올 데이터 타입정의

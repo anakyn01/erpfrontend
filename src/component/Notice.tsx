@@ -3,7 +3,7 @@ import {Table} from "react-bootstrap";
 const Notice = () => {
     return(
         <>
-<div className="d-flex justify-content-between align-items-center">
+<div className="d-flex justify-content-between align-items-center mt-70">
 <h4>전자결재</h4>
 <div className=""></div>
 </div>

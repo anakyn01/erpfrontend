@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col, Table, Button } from "react-bootstrap";
-import "../assets/scss/Admin.scss";
+
 
 type MiniCalendarProps = {
   selectedDate?: Date | null;
@@ -85,7 +85,7 @@ const Callendar: React.FC<MiniCalendarProps> = ({ selectedDate, onChange }) => {
   };
 
   return (
-    <Container className="schedule-container">
+    <Container className="schedule-container mt-70">
       <Row>
         <Col>
           {/* 상단 헤더 */}
@@ -101,7 +101,7 @@ const Callendar: React.FC<MiniCalendarProps> = ({ selectedDate, onChange }) => {
               <span className="schedule-month-text">
                 {year}/{(month + 1).toString().padStart(2, "0")}
               </span>
-              <span className="schedule-title">일정관리</span>
+              <span className="fs-16-600-black">일정관리</span>
             </div>
             <div className="schedule-header-right">
               {/* 아이콘 자리 (추가 버튼 등 넣고 싶으면 여기에) */}
