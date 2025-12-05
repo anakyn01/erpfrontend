@@ -5,7 +5,9 @@ table.draft{
             th{
         background-color: #f3f3f3 !important; 
         font-size:14px !important;
-        font-weight: 500 !important;        
+        font-weight: 500 !important;  
+        width:128px !important;
+        max-width:100% !important;      
             }
         }
     }
@@ -15,6 +17,8 @@ table.draft{
             color:#999 !important;
         font-size:13px !important;
         font-weight: 400 !important;  
+                width:128px !important;
+        max-width:100% !important;    
             }
         }
     }

@@ -109,7 +109,16 @@ const Callendar: React.FC<MiniCalendarProps> = ({ selectedDate, onChange }) => {
           </div>
 
           {/* 달력 테이블 */}
-          <Table bordered hover className="schedule-table">
+          <Table bordered hover className="table schedule-table" responsive="sm">
+            <colgroup>
+            <col style={{width:"128px"}}/>
+            <col style={{width:"128px"}}/>
+            <col style={{width:"128px"}}/>
+            <col style={{width:"128px"}}/>
+            <col style={{width:"128px"}}/>
+            <col style={{width:"128px"}}/>
+            <col style={{width:"128px"}}/>
+            </colgroup>
             <thead>
               <tr>
                 <th>일</th>
