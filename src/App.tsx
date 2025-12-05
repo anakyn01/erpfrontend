@@ -11,6 +11,8 @@ useEffect : 컴포넌트가 렌더링 될때나 특정 값이 바뀔때 실행�
 함수를 등록할때 사용합니다 여기서는 API요청을 보낼때 사용합니다
 */
 import Header from './include/Header';
+import Top from './include/Top';
+import SideBar from './include/SideBar';
 import Member from './1_member/Member';
 import Home from './sub/Home';
 import Admin from './sub/Admin';
@@ -68,8 +70,11 @@ if  배열에 값이 있다면 그 값이 바뀔때 마다 실행된다
   return (
 <>
 <BrowserRouter>
+<div className="fixed-top">
+  <Top/>
   <Header/>
-
+</div>
+<SideBar/>
   {/*<div>
   스프링 부트에서 가져온 데이터 입니다 : {hello}
   </div>*/}

@@ -3,7 +3,7 @@ import {Table} from "react-bootstrap";
 const Pay = () => {
     return(
         <>
-<div className="pay mt-70">
+<div className="pay mt-120">
 <div className="d-flex justify-content-between align-items-center">
 <h4 className="fs-16-600-black">전자결재</h4>
 <div className=""></div>

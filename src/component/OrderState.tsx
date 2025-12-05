@@ -21,7 +21,14 @@ const OrderState = () => {
         <th>상세</th>
     </tr>
 </thead>
-<tbody></tbody>
+<tbody>
+    <tr>
+        <td>00024_202512</td>
+        <td>기본유통흐름</td>
+        <td></td>
+        <td><a href="">보기</a></td>
+    </tr>
+</tbody>
 <tfoot></tfoot>
 </Table>
 </div>

@@ -23,3 +23,27 @@ table.draft{
         }
     }
 }
+
+table.order{
+    thead{
+        tr{
+            th{
+                background-color:#f7f8f9;
+                color:#26a026;
+                font-size:14px;
+                font-weight:500;
+            }
+        }
+    }
+    tbody{
+        tr{
+            border:none !important;
+            td{
+            border:none !important;
+            font-size:13px;
+            font-weight:400;
+            color:#666;
+            }
+        }
+    }
+}

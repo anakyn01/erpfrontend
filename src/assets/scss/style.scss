@@ -36,4 +36,11 @@ html{
     }
 
 
-
+.sidebar{
+position:absolute;
+bottom:0; right:0;
+width:4%;
+height:100%;
+background-color: hotpink;
+z-index:999999999 !important;
+}

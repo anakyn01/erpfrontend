@@ -85,7 +85,7 @@ const Callendar: React.FC<MiniCalendarProps> = ({ selectedDate, onChange }) => {
   };
 
   return (
-    <Container className="schedule-container mt-70">
+    <Container className="schedule-container mt-120">
       <Row>
         <Col>
           {/* 상단 헤더 */}

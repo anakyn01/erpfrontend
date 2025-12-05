@@ -1,6 +1,7 @@
 import {Button, Container, Form, Nav, 
   Navbar, NavDropdown, Offcanvas} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Top from './Top';
 
   //[false, 'sm', 'md', 'lg', 'xl', 'xxl']
 const Header = () => { //jsx
@@ -10,7 +11,7 @@ const Header = () => { //jsx
 
 <Navbar key={expand} 
 expand={expand} 
-className="bg-body-tertiary mb-3 fixed-top">
+className="bg-body-tertiary mb-3">
 {/* 
 React-Bootstrap의 <Navbar> 컴포넌트에서 expand는 반응형(Responsive) 동작을 제어하는 핵심 속성이에요.
 key={expand} : React에서 map 반복 시 고유 key 필요
@@ -31,18 +32,23 @@ expand={expand} : 각 반복에 맞는 반응형 설정
       
       <Offcanvas.Header closeButton>
         <Offcanvas.Title id={`offcanvasNavbar-expand-${expand}`}>
-          samERP Menu
+          <a href="/">samERP Menu</a>
         </Offcanvas.Title>
       </Offcanvas.Header>
 
       <Offcanvas.Body>
-        <Nav className='justify-content-end flex-grow-1 pe-3'>
+        <Nav className='justify-content-start flex-grow-1 pe-3'>
           {/*링크들을 오른쪽 끝으로 정렬 오른쪽 패딩에 공백 */}
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/mypage">MyPage</Nav.Link>
               <Nav.Link as={Link} to="/admin">admin</Nav.Link>
-              <Nav.Link as={Link} to="/member">회원가입</Nav.Link>
-              <Nav.Link as={Link} to="/about">about</Nav.Link>
-              <Nav.Link as={Link} to="/contact">contact</Nav.Link>
+              <Nav.Link as={Link} to="/ea1">재고1</Nav.Link>
+              <Nav.Link as={Link} to="/ea2">재고2</Nav.Link>
+              <Nav.Link as={Link} to="/ac1">회계1</Nav.Link>
+              <Nav.Link as={Link} to="/ac2">회계2</Nav.Link>
+              <Nav.Link as={Link} to="/ac2">세무</Nav.Link>
+              <Nav.Link as={Link} to="/ac2">그룹웨어</Nav.Link>
+              <Nav.Link as={Link} to="/ac2">데이터센터</Nav.Link>
+              <Nav.Link as={Link} to="/manage">관리</Nav.Link>
               {/*버튼에 2단 2depth는 드롭다운 */}
               <NavDropdown
               title="고객정보"
@@ -55,7 +61,7 @@ expand={expand} : 각 반복에 맞는 반응형 설정
                  <NavDropdown.Item as={Link} to="/">접수경로</NavDropdown.Item>
               </NavDropdown>
         </Nav> 
-        <Form className='d-flex'>
+        <Form className='d-flex m5'>
           <Form.Control
           type="search"
           placeholder='search'

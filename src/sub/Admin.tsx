@@ -12,24 +12,28 @@ const Admin= () => {
         <>
 <Container fluid>
     <Row>
-        <Col md={6}>
+        <Col md={1}></Col>
+        <Col md={5}>
         <div className="">
             <Callendar/>
         </div>
         </Col>
         
-        <Col md={6}>
+        <Col md={5}>
         <div className="">
             <Pay/>
             <Notice/>
         </div>
         </Col>
+        <Col md={1}></Col>
     </Row>
 
     <Row>
-        <Col md={12}>
-<OrderState/>
+        <Col md={1}></Col>
+        <Col md={10}>
+            <OrderState/>
         </Col>
+        <Col md={1}></Col>
     </Row>
 </Container>
         </>
