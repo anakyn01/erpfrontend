@@ -11,7 +11,6 @@ useEffect : 컴포넌트가 렌더링 될때나 특정 값이 바뀔때 실행�
 함수를 등록할때 사용합니다 여기서는 API요청을 보낼때 사용합니다
 */
 import Header from './include/Header';
-import Footer from './include/Footer';
 import Member from './1_member/Member';
 import Home from './sub/Home';
 import Admin from './sub/Admin';

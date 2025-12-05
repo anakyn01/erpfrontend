@@ -3,6 +3,7 @@ import {Container, Row, Col, Button, Card,Table} from "react-bootstrap"
 import Callendar from "../component/Callenadar";
 import Pay from "../component/Pay";
 import Notice from "../component/Notice";
+import OrderState from "../component/OrderState";
 
 
 const Admin= () => {
@@ -22,6 +23,12 @@ const Admin= () => {
             <Pay/>
             <Notice/>
         </div>
+        </Col>
+    </Row>
+
+    <Row>
+        <Col md={12}>
+<OrderState/>
         </Col>
     </Row>
 </Container>
