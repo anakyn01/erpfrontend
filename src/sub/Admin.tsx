@@ -4,12 +4,19 @@ import Callendar from "../component/Callenadar";
 import Pay from "../component/Pay";
 import Notice from "../component/Notice";
 import OrderState from "../component/OrderState";
-
+import Top from "../include/Top";
+import Header from "../include/Header";
+import SideBar from "../include/SideBar";
 
 const Admin= () => {
 
     return(
         <>
+<div className="fixed-top">
+  <Top/>
+  <Header/>
+</div>
+<SideBar/>
 <Container fluid>
     <Row>
         <Col md={1}></Col>

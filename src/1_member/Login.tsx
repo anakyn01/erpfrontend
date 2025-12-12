@@ -16,12 +16,12 @@ if(!email || !password){
 alert("이메일과 비밀번호를 입력해 주세요!");
 return;
 }try{
-const res = await axios.post("http://localhost:8888/login",{
+const res = await axios.post("http://localhost:8888/members/login",{
 email, password,
 });
 if(res.status === 200){
 alert("로그인 성공");
-window.location.href="/";
+window.location.href="http://localhost:5173/admin";
 }
 }catch(err){
 console.error(err);

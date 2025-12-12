@@ -70,17 +70,13 @@ if  배열에 값이 있다면 그 값이 바뀔때 마다 실행된다
   return (
 <>
 <BrowserRouter>
-<div className="fixed-top">
-  <Top/>
-  <Header/>
-</div>
-<SideBar/>
+
   {/*<div>
   스프링 부트에서 가져온 데이터 입니다 : {hello}
   </div>*/}
 
   <Routes>
-    <Route path="/" element={<Home/>}/>
+    <Route path="/" element={<Login/>}/>
     <Route path="/admin" element={<Admin/>}/>
     <Route path="/about" element={<About/>}/>
     <Route path="/contact" element={<Contact/>}/>
