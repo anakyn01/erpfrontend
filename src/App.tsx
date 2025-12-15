@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios';
+import ProtectedRoute from './routes/ProtectedRoute';
 /*
 React : 리액트 라이브러리 자체를 가져 옵니다
 useState : 리액트 훅(Hook)으로 컴포넌트 내부에서 상태(state)를 관리할때 사용합니다
@@ -24,6 +25,7 @@ import InstagramRedirect from './1_member/InstargramRedirect';
 import KakaoRedirect from './1_member/KakaoRedirect';
 //react나 vue에서 링크연결을 라우팅이라 합니다 npm install react-router-dom
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+
 
 //부트스트랩 cdn
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -77,7 +79,7 @@ if  배열에 값이 있다면 그 값이 바뀔때 마다 실행된다
 
   <Routes>
     <Route path="/" element={<Login/>}/>
-    <Route path="/admin" element={<Admin/>}/>
+    <Route path="/admin" element={<ProtectedRoute><Admin/></ProtectedRoute>}/>
     <Route path="/about" element={<About/>}/>
     <Route path="/contact" element={<Contact/>}/>
     <Route path="/member" element={<Member/>}/>

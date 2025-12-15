@@ -1,3 +1,6 @@
+//간단하게 리액트 만으로 처리하지만 but 다시함
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import {Container, Row, Col, Button, Card,Table} from "react-bootstrap"
 import Callendar from "../component/Callenadar";
@@ -9,6 +12,16 @@ import Header from "../include/Header";
 import SideBar from "../include/SideBar";
 
 const Admin= () => {
+
+    const navigate = useNavigate();
+
+    useEffect(() =>{
+const token = localStorage.getItem("token");
+if(!token){
+    alert("로그인이 필요합니다");
+    navigate("/login");
+}      
+    },[navigate]);
 
     return(
         <>
