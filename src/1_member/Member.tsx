@@ -33,7 +33,7 @@ interface FormData {
 }
 
 declare global {
-  interface window {
+  interface Window {
     daum: any;
   }
 }
