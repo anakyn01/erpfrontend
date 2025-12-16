@@ -13,7 +13,7 @@ import SideBar from "../include/SideBar";
 
 const Admin= () => {
 
-    const navigate = useNavigate();
+    /*const navigate = useNavigate();
 
     useEffect(() =>{
 const token = localStorage.getItem("token");
@@ -21,7 +21,7 @@ if(!token){
     alert("로그인이 필요합니다");
     navigate("/login");
 }      
-    },[navigate]);
+    },[navigate]);*/
 
     return(
         <>
