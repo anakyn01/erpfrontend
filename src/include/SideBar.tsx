@@ -13,6 +13,10 @@ justify-content:flex-end;
 align-items:center;
 z-index:999999;
 background-color:hotpink;
+
+@media (max-width:768px) {
+display:none;
+}
 `;//position:fixed 는 언제든 포지션 고정 
 
 const Icon = styled.img`

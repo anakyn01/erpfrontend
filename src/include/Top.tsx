@@ -3,6 +3,7 @@ import {Container, Row, Col} from "react-bootstrap";
 
 const HeaderWrap = styled.div`
 background-color:white; padding:1rem;
+@media (max-width:768px) {display:none;}
 `;
 
 const Link = styled.a`
